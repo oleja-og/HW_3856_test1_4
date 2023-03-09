@@ -9,6 +9,8 @@ string[] massiv3 = {"Russia","Denmark","Kazan"};
 
 string[] EnterArray(string[] array)
 {
+    // Находим кол-во строк удовлетворяющих условию
+    // Чтобы задать величину выхдного массива
     int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
@@ -18,6 +20,7 @@ string[] EnterArray(string[] array)
         }
     }
     
+    // Записываем строки в выходной массив
     string[] massiv = new string[count];
     int j = 0;
     for (int i = 0; i < array.Length; i++)
